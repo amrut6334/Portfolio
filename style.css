@@ -188,3 +188,8 @@ nav {
         width: 0;
     }
 }
+@media (max-width:400px){
+    .btn_contact{
+        width: 15%;
+    }
+}
