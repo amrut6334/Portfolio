@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* ********************************Navbar********************************* */
+.linear-gradient-box {
+    background: linear-gradient(to right, #dd4a8c, #854EEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* For better support (non-webkit browsers), you can add: */
+    background-clip: text;
+    color: transparent;
+}
+
+.nav_a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+nav {
+    z-index: +5;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.186);
+}
+.nav_a.active {
+  color: #a70850;
+}
+
+
+
+/* *************************************header*************************************** */
+.headre_left_text {
+    font-size: 56px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(248, 242, 242);
+    /* position: relative; */
+    z-index: -1;
+}
+
+.headre_left_text::before {
+    position: absolute;
+    content: ' ';
+    height: 60px;
+    z-index: -2;
+    width: 0%;
+    background: linear-gradient(to right, #dd4a8c, #854EEE);
+    margin-top: 6px;
+    transition: all 3s;
+    border-radius: 5px;
+}
+
+.headre_left_text:hover::before {
+    transition: all 0.9s;
+    width: 41%;
+}
+
+.btn2 {
+    border: 1px solid;
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: #854EEE;
+    background: linear-gradient(to right, #dd4a8c, #854EEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn2:hover {
+    background: linear-gradient(to right, #dd964a, #ee4e4e);
+    -webkit-text-fill-color: white;
+    color: white;
+}
+
+/* ***********************************section 1***************************************** */
+.btn_dow {
+    border: 1px solid;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-color: #854EEE;
+    background: linear-gradient(to right, #dd964a, #ee4e4e);
+    -webkit-text-fill-color: white;
+    color: white;
+    font-size: 15px;
+}
+
+.btn_dow:hover {
+    background-color: transparent;
+    background: linear-gradient(to right, #dd4a8c, #854EEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ***********************************section 2***************************************** */
+.section_2_right {
+    font-size: 10rem;
+    font-weight: 500;
+    color: #854FEE;
+}
+
+.section_2_icn {
+    font-size: 4rem;
+}
+
+.section_2_left {
+    line-height: 20px;
+    margin-left: 25px;
+    font-size: 30px;
+    color: #854EEE;
+}
+
+/* ***********************************section 2***************************************** */
+.section_3_card {
+    /* width:  50%; */
+    padding: 50px 0px;
+    background-color: #F9F9FD;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.section_3_card:hover {
+    background-color: 0;
+    box-shadow: #854EEE 1px 1px 20px 1px;
+}
+
+.section_3_card img {
+    /* width: 30%; */
+}
+
+/* ***********************************section 4***************************************** */
+/* .card{
+    z-index: -1;
+} */
+.btn_contact {
+    width: 8%;
+    border-radius: 10px;
+    transition: all 0.6s;
+    margin-left: 20px;
+    background-color: #854FEE;
+}
+
+.btn_contact:hover {
+    transform: scale(1.2) rotate(6deg);
+}
+
+/* *****************************section project***************************** */
+.card-project {
+    padding: 50px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.158);
+}
+
+.card-project:hover {
+    background-color: 0;
+    box-shadow: #854EEE 1px 1px 20px 1px;
+}
+
+.linear-gradient-text {
+    background: linear-gradient(to left, #dd4a8c, #854EEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* For better support (non-webkit browsers), you can add: */
+    background-clip: text;
+    color: transparent;
+    
+}
+
+
+@media (max-width: 1500px) {
+    .headre_left_text:hover::before{
+        width: 0;
+    }
+}
