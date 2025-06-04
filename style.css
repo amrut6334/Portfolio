@@ -187,6 +187,9 @@ nav {
     .headre_left_text:hover::before{
         width: 0;
     }
+      .headre_left_text {
+        -webkit-text-stroke: 1px rgb(5, 0, 0);
+    }
 }
 @media (max-width:400px){
     .btn_contact{
